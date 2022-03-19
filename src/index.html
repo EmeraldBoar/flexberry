@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./html/head.html', {
+  "title": "Главная"
+})
+<body>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <img class="page-header__logo" src="./img/icons/icons.svg#logo-plain" alt="logo-plain" width="82" height="89"/>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Aviasales - поиск дешевых авиабилетов</h1>  
+    <section class="search">
+      <h2 class="visually-hidden">Поиск авиабилетов</h2>
+      <div class="search_container container">
+        <div class="filters border-radius box-shadow">
+          <h2 class="filters__title">Количество пересадок</h2>
+            <div class="filters__list">
+              <label class="filters__label">Все
+                <input class="visually-hidden"type="checkbox">
+                <span class="filters__checkmark"></span>
+              </label>
+              <label class="filters__label">Без пересадок
+                <input class="visually-hidden"type="checkbox">
+                <span class="filters__checkmark"></span>
+              </label>
+              <label class="filters__label">1 пересадка
+                <input class="visually-hidden"type="checkbox">
+                <span class="filters__checkmark"></span>
+              </label>
+              <label class="filters__label">2 пересадки
+                <input class="visually-hidden"type="checkbox">
+                <span class="filters__checkmark"></span>
+              </label>
+              <label class="filters__label">3 пересадки
+                <input class="visually-hidden"type="checkbox">
+                <span class="filters__checkmark"></span>
+              </label>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
