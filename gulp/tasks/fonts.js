@@ -18,14 +18,14 @@ export const ttfToWoff = () => {
 
 
 export const fontsStyle = () => {
-  let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+  let fontsFile = `${app.path.srcFolder}/scss/fonts/fonts.scss`;
 
   const weights = {
     'thin': 100,
     'light': 200,
     'medium': 300,
     'regular': 400,
-    'semibold': 400,
+    'semibold': 600,
     'bold': 700,
     'extrabold': 800,
     'heavy': 800,
