@@ -45,8 +45,11 @@
 
 .tickets__logo img {
   display: block;
-  height: 30px;
   width: auto;
+
+  @media (max-width: 450px) {
+    height: 30px;
+  }
 }
 
 .tickets__table {
@@ -60,7 +63,7 @@
 
 .tickets__row {
   display: flex;
-  column-gap: 21px;
+  column-gap: 23px;
 
   @media (max-width: 450px) {
     column-gap: 10px
