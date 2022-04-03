@@ -3,6 +3,16 @@
   padding-top: 22px;
   padding-bottom: 10px;
   background-color: #ffffff;
+  @include border-radius;
+  @include box-shadow;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media (max-width: 450px) {
+    padding-top: 20px;
+  }
 }
 
 .filters__title {
@@ -14,6 +24,11 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+
+  @media (max-width: 450px) {
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
 
 .filters__list {
@@ -33,6 +48,12 @@
   &:hover,
   &:focus-within {
     background-color: #f1fcff;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 50px;
   }
 }
 
