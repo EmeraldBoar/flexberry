@@ -1,0 +1,36 @@
+.search {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.search__container {
+  display: flex;
+  column-gap: 20px;
+  flex: 1 1 auto;
+  padding-top: 15px;
+  padding-bottom: 120px;
+  background-color: #f3f7fa;
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+
+.search__aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.search__content {
+  width: 67%;
+
+  @media (max-width: 830px) {
+    width: 100%;
+  }
+}
+
+.search__sort {
+  margin-bottom: 17px;
+}

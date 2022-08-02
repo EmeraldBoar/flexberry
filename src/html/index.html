@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="icon" href="favicon.svg" />
+    <title>Aviasales</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__container container">
+          <img
+            class="page-header__logo"
+            src="./img/icons/sprite/sprite.svg#logo-plain"
+            alt="logo-plain"
+            width="82"
+            height="89"
+          />
+        </div>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Aviasales - поиск дешевых авиабилетов</h1>
+        <section class="search">
+          <h2 class="visually-hidden">Поиск авиабилетов</h2>
+          <div class="search__container container">
+            <div class="search__aside">
+              <div class="search__filters filters">
+                <h2 class="filters__title">Количество пересадок</h2>
+                <div class="filters__list">
+                  <label class="filters__label"
+                    >Все
+                    <input class="visually-hidden" type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                  <label class="filters__label"
+                    >Без пересадок
+                    <input class="visually-hidden" type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                  <label class="filters__label"
+                    >1 пересадка
+                    <input class="visually-hidden" type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                  <label class="filters__label"
+                    >2 пересадки
+                    <input class="visually-hidden" type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                  <label class="filters__label"
+                    >3 пересадки
+                    <input class="visually-hidden" type="checkbox" />
+                    <span class="filters__checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="search__content">
+              <div class="search__sort sort">
+                <button class="sort__button sort__button--active">
+                  Самый дешевый
+                </button>
+                <button class="sort__button">Самый быстрый</button>
+              </div>
+              <ul class="tickets"></ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <template id="ticket">
+      <li class="tickets__item">
+        <div class="tickets__header">
+          <span class="tickets__price">13 400 Р</span>
+          <div class="tickets__logo">
+            <img
+              src="./img/logo-s7.png"
+              alt="s7 airlines"
+              width="110"
+              height="36"
+            />
+          </div>
+        </div>
+        <table class="tickets__table tickets__departure">
+          <tr class="tickets__row">
+            <th class="tickets__table-header">Mow – Hkt</th>
+            <th class="tickets__table-header">В пути</th>
+            <th class="tickets__table-header">2 пересадки</th>
+          </tr>
+          <tr class="tickets__row">
+            <td class="tickets__table-data">10:45 – 08:00</td>
+            <td class="tickets__table-data">21ч 15м</td>
+            <td class="tickets__table-data">HKG, JNB</td>
+          </tr>
+        </table>
+        <table class="tickets__table tickets__arrival">
+          <tr class="tickets__row">
+            <th class="tickets__table-header">Mow – Hkt</th>
+            <th class="tickets__table-header">В пути</th>
+            <th class="tickets__table-header">1 пересадка</th>
+          </tr>
+          <tr class="tickets__row">
+            <td class="tickets__table-data">11:20 – 00:50</td>
+            <td class="tickets__table-data">13ч 30м</td>
+            <td class="tickets__table-data">HKG</td>
+          </tr>
+        </table>
+      </li>
+    </template>
+  </body>
+</html>
