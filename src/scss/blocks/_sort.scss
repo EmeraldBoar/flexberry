@@ -21,7 +21,7 @@
   }
 
   &:last-child {
-    border-left: none;
+    border-left-color: transparent;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
@@ -46,4 +46,9 @@
   color: $main-color;
   background-color: #e8f4ff ;
   border-color: $main-color;
+}
+
+.sort__button:last-child:not(.sort__button--active):hover,
+.sort__button:not(.sort__button--active):focus {
+  border-left: 1px solid $main-color;
 }

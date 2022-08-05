@@ -74,8 +74,9 @@
       <li class="tickets__item">
         <div class="tickets__header">
           <span class="tickets__price">13 400 Р</span>
-          <div class="tickets__logo">
+          <div class="tickets__logo logo">
             <img
+              class="logo__image"
               src="./img/logo-s7.png"
               alt="s7 airlines"
               width="110"
@@ -83,30 +84,46 @@
             />
           </div>
         </div>
-        <table class="tickets__table tickets__departure">
-          <tr class="tickets__row">
-            <th class="tickets__table-header">Mow – Hkt</th>
-            <th class="tickets__table-header">В пути</th>
-            <th class="tickets__table-header">2 пересадки</th>
-          </tr>
-          <tr class="tickets__row">
-            <td class="tickets__table-data">10:45 – 08:00</td>
-            <td class="tickets__table-data">21ч 15м</td>
-            <td class="tickets__table-data">HKG, JNB</td>
-          </tr>
-        </table>
-        <table class="tickets__table tickets__arrival">
-          <tr class="tickets__row">
-            <th class="tickets__table-header">Mow – Hkt</th>
-            <th class="tickets__table-header">В пути</th>
-            <th class="tickets__table-header">1 пересадка</th>
-          </tr>
-          <tr class="tickets__row">
-            <td class="tickets__table-data">11:20 – 00:50</td>
-            <td class="tickets__table-data">13ч 30м</td>
-            <td class="tickets__table-data">HKG</td>
-          </tr>
-        </table>
+        <div class="ticket__table-wrapper">
+          <table class="tickets__table">
+            <tr class="tickets__row">
+              <th class="tickets__table-header">
+                <span class="tickets__origin">Mow</span>–<span
+                  class="tickets__destination"
+                  >Hkt</span
+                >
+              </th>
+              <th class="tickets__table-header">В пути</th>
+              <th class="tickets__table-header tickets__stops-count">
+                2 пересадки
+              </th>
+            </tr>
+            <tr class="tickets__row">
+              <td class="tickets__table-data tickets__time">10:45 – 08:00</td>
+              <td class="tickets__table-data tickets__route">21ч 15м</td>
+              <td class="tickets__table-data tickets__stops">HKG, JNB</td>
+            </tr>
+          </table>
+          <table class="tickets__table">
+            <tr class="tickets__row">
+              <th class="tickets__table-header">
+                <span class="tickets__origin">Nsk</span>–<span
+                  class="tickets__destination"
+                  >Hkt</span
+                >
+              </th>
+              <th class="tickets__table-header">В пути</th>
+              <th class="tickets__table-header tickets__count-stops">
+                1 пересадка
+              </th>
+            </tr>
+            <tr class="tickets__row">
+              <td class="tickets__table-data tickets__time">11:20 – 00:50</td>
+              <td class="tickets__table-data tickets__route">13ч 30м</td>
+              <td class="tickets__table-data tickets__stops">HKG</td>
+            </tr>
+          </table>
+        </div>
       </li>
     </template>
     <script src="./js/main.bundle.js"></script>

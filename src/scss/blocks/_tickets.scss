@@ -43,23 +43,18 @@
   }
 }
 
-.tickets__logo img {
-  display: block;
-  width: auto;
-
-  @media (max-width: 450px) {
-    height: 30px;
-  }
-}
-
 .tickets__table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.tickets__departure {
-  margin-bottom: 10px;
-}
+
+
 
 .tickets__row {
   display: flex;
