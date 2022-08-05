@@ -52,5 +52,8 @@
     "presets": [
       "@babel/preset-env"
     ]
+  },
+  "dependencies": {
+    "dayjs": "^1.11.4"
   }
 }
