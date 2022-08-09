@@ -31,27 +31,52 @@
                 <div class="filters__list">
                   <label class="filters__label"
                     >Все
-                    <input class="visually-hidden" type="checkbox" />
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="transfer"
+                      value="all"
+                    />
                     <span class="filters__checkmark"></span>
                   </label>
                   <label class="filters__label"
                     >Без пересадок
-                    <input class="visually-hidden" type="checkbox" />
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="transfer"
+                      value="0"
+                    />
                     <span class="filters__checkmark"></span>
                   </label>
                   <label class="filters__label"
                     >1 пересадка
-                    <input class="visually-hidden" type="checkbox" />
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="transfer"
+                      value="1"
+                    />
                     <span class="filters__checkmark"></span>
                   </label>
                   <label class="filters__label"
                     >2 пересадки
-                    <input class="visually-hidden" type="checkbox" />
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="transfer"
+                      value="2"
+                    />
                     <span class="filters__checkmark"></span>
                   </label>
                   <label class="filters__label"
                     >3 пересадки
-                    <input class="visually-hidden" type="checkbox" />
+                    <input
+                      class="visually-hidden"
+                      type="checkbox"
+                      name="transfer"
+                      value="3"
+                    />
                     <span class="filters__checkmark"></span>
                   </label>
                 </div>
@@ -59,10 +84,15 @@
             </div>
             <div class="search__content">
               <div class="search__sort sort">
-                <button class="sort__button sort__button--active">
+                <button
+                  class="sort__button sort__button--active"
+                  data-sort="price"
+                >
                   Самый дешевый
                 </button>
-                <button class="sort__button">Самый быстрый</button>
+                <button class="sort__button" data-sort="time">
+                  Самый быстрый
+                </button>
               </div>
               <ul class="tickets"></ul>
             </div>
@@ -123,6 +153,26 @@
               <td class="tickets__table-data tickets__stops">HKG</td>
             </tr>
           </table>
+        </div>
+      </li>
+    </template>
+    <template id="plug">
+      <li class="plug__item">
+        <div class="plug__header">
+          <span class="plug__element"></span>
+          <span class="plug__element"></span>
+        </div>
+        <div class="plug__wrapper">
+          <div class="plug__row">
+            <span class="plug__row-element"></span>
+            <span class="plug__row-element"></span>
+            <span class="plug__row-element"></span>
+          </div>
+          <div class="plug__row">
+            <span class="plug__row-element"></span>
+            <span class="plug__row-element"></span>
+            <span class="plug__row-element"></span>
+          </div>
         </div>
       </li>
     </template>
