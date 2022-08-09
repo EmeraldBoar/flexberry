@@ -9,7 +9,7 @@
 - HTML
 - SCSS
 - JavaScript
-- Такс-раннер GULP
+- Таск-раннер GULP
 - Сборщик Webpack
 - БЭМ
 
