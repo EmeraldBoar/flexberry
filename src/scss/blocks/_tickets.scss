@@ -12,7 +12,7 @@
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 450px) {
     padding: 20px 10px;
@@ -32,7 +32,7 @@
 
 
 .tickets__price {
-  color: #2196F3;
+  color: #2196f3;
   font-size: 24px;
   line-height: 24px;
   font-weight: 600;
@@ -53,22 +53,19 @@
   }
 }
 
-
-
-
 .tickets__row {
   display: flex;
   column-gap: 23px;
 
   @media (max-width: 450px) {
-    column-gap: 10px
+    column-gap: 10px;
   }
 }
 
 .tickets__table-header {
   width: 30%;
   padding: 0;
-  color: #A0B0B9;
+  color: #a0b0b9;
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;

@@ -59,7 +59,7 @@ const createTicket = (ticket) => {
   const logoImageElement = ticketElement.querySelector('.logo__image');
   const flightsWrapperElement = ticketElement.querySelector('.ticket__table-wrapper');
 
-  const formattedPrice = ticket.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  const formattedPrice = ticket.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 
   priceElement.textContent = `${formattedPrice} Р`;
   logoImageElement.src = `http://pics.avs.io/99/36/${ticket.carrier}.png`;

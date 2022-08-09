@@ -1,6 +1,6 @@
-import { createTicket } from "./create-ticket.js";
-import { filtersTickets } from "./filter.js";
-import { getSelectedComparison } from "./sort.js";
+import { createTicket } from './create-ticket.js';
+import { filtersTickets } from './filter.js';
+import { getSelectedComparison } from './sort.js';
 
 
 const renderTickets = (tickets) => {

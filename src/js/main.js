@@ -20,12 +20,12 @@ getData(
     setSortClick(debounce(
       () => {
         renderTickets(tickets)},
-      RERENDER_DELAY
-      ));
+      RERENDER_DELAY,
+    ));
     setFilterCLick(debounce(
       () => renderTickets(tickets),
-      RERENDER_DELAY
-      ));
+      RERENDER_DELAY,
+    ));
   },
   (error) => console.log(error),
 );

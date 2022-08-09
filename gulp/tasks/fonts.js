@@ -14,8 +14,8 @@ const fonts = () => {
     .pipe(plumber({
       errorHandler: notify.onError((error) => ({
         title: 'Fonts',
-        message: error.message
-      }))
+        message: error.message,
+      })),
     }))
     .pipe(ttf2woff())
     .pipe(gulp.dest(path.fonts.dest))
@@ -56,13 +56,7 @@ const fontsStyle = () => {
 
             const fontWeight = weights[fontWeightName] ? weights[fontWeightName] : 400;
 
-            const templateFont = `@font-face{\n\t
-              font-family: ${fontName};\n\t
-              font-display: swap;\n\t
-              src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\t
-              font-weight: ${fontWeight};\n\t
-              font-style: normal;\n
-            }\r\n`;
+            const templateFont = `@font-face {\n  font-family: "${fontName}";\n  font-display: swap;\n  src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n  font-weight: ${fontWeight};\n  font-style: normal;\n}\r\n\n`;
 
             fs.appendFile(fontsFile, templateFont, cb);
 
@@ -77,7 +71,7 @@ const fontsStyle = () => {
   });
 
   return gulp.src(`${path.pathSrc}`);
-  function cb() { };
+  function cb() { }
 }
 
 export { fonts, fontsStyle};
