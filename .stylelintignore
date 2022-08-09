@@ -1,2 +1,2 @@
-./src/scss/vendors/*.scss
-./dist/css/*.css
+src/scss/vendors/*.scss
+public/css/*.css
