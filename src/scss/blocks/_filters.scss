@@ -36,6 +36,28 @@
   flex-direction: column;
 }
 
+.filters--disabled {
+  color: lighten($main-font-color, 30%);
+
+  // & .filters__title {
+  //   color: lighten($main-font-color, 30%);
+  // }
+
+  & .filters__checkmark {
+    border-color: lighten($main-font-color, 50%);
+  }
+
+  & .filters__label {
+    cursor: auto;
+  }
+
+  & .filters__label:hover,
+  & .filters__label:focus-within {
+    background-color: inherit;
+  }
+}
+
+
 .filters__label {
   position: relative;
   padding: 10px 50px;
