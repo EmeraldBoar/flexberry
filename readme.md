@@ -1,6 +1,6 @@
 # Тестовое задание "Flexberry"
 
-#### Ссылка на деплой: [Flexberry](emeraldboar.github.io/flexberry)
+#### Ссылка на деплой: [Flexberry](https://emeraldboar.github.io/flexberry/)
 
 Требуется разработать небольшое одностраничное веб-приложение без использования JavaScript-фреймворков на основе [открытого тестового задания компании Aviasales](https://github.com/KosyanMedia/test-tasks/tree/master/aviasales_frontend).
 
