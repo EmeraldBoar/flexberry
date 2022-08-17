@@ -832,6 +832,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 20px;
+    padding-bottom: 50px;
   }
 
   .search__content {
@@ -846,6 +847,10 @@ body {
 @media (max-width: 450px) {
   .container {
     padding: 0 20px;
+  }
+
+  .search__container {
+    padding-bottom: 50px;
   }
 
   .filters {
